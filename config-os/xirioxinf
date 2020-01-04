@@ -1,0 +1,7 @@
+[InputSource0]
+xkb=latam
+
+[User]
+XSession=xfce
+Background=/home/xirioxinf/Documentos/descarte_xiriox/config-os/background.png
+SystemAccount=false
