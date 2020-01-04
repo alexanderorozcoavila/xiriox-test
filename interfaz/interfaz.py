@@ -707,7 +707,7 @@ class Player(tk.Frame):
             self.latitud_text.set(texto)
             texto =r['gps']['longitud']
             self.longitud_text.set(texto)
-            texto =r['gps']['longitud']
+            texto =r['gps']['rumbo']
             self.rumbo_text.set(texto)
             texto =r['gps']['velocidad']
             self.velocidad_text.set(texto)
@@ -723,7 +723,9 @@ class Player(tk.Frame):
             self.por_disc_x = int(pd)
             self.porcentaje_disco_usado.set(self.por_disc_x)
             self.porcentaje_disco_disponible.set(100-self.por_disc_x)
-            rs = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
+            
+            rs1 = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
+            rs = round(rs1, 2) + str(" MB")
             self.total_disco.set(rs)
             if texto_disco == "grabando":
                 self.grabacion.set(" Ok ")

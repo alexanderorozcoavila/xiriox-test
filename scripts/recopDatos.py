@@ -4,7 +4,10 @@ import time
 import psutil
 import configparser
 import json
+from aiohttp import web
 import os
+
+
 
 direc_principal = '/home/xirioxinf/Documentos'
 configuracion = configparser.ConfigParser() # abre archivo de configuración
@@ -90,7 +93,7 @@ def index(var2 = 1):
     #while True:
         count = 0
         fps = 0
-        gps = ['0','0','0','00°00'+"'00"+'0"','00°00'+"'00"+'0"','0','0']
+        gps = ['0','0','0','0','00°00'+"'00"+'0"','00°00'+"'00"+'0"','0','0']
         gps_aux = gps
         #while True: # ciclo para ir recibiendo los frames
         seg =  time.strftime('%S') # se obtiene el segundo actual
@@ -176,6 +179,8 @@ def index(var2 = 1):
         else:
             #ImageDraw.Draw(img).text((60,510), "ALARMA", fill='white', font=ttf)
             estado_alarma = 'true'
+        
+        
         salida_json = {
                             'id':{
                                     'id_dri':id_dri,
@@ -185,10 +190,10 @@ def index(var2 = 1):
                             'gps':{
                                     'fecha':fecha,
                                     'hora':hora,
-                                    'latitud':gps[3],
-                                    'longitud':gps[4],
-                                    'rumbo':gps[6],
-                                    'velocidad':gps[5]
+                                    'latitud':gps[4],
+                                    'longitud':gps[5],
+                                    'rumbo':gps[7],
+                                    'velocidad':gps[6]
                             },
                             'estado_grabacion': estado_grabacion,
                             'discos_duros':{

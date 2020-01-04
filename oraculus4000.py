@@ -123,21 +123,22 @@ script_array = [
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/ejecutarAlarmas.py',
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/alarmaCamara.py',
  				'python3 /home/xirioxinf/Documentos/descarte_xiriox/alarmaUPS.py',
+				'python3 /home/xirioxinf/Documentos/descarte_xiriox/scripts/recopDatos.py',
 				]
 
-# script_array = [##'/home/xirioxinf/Documentos/descarte_xiriox/grabar/./ejecutar_grabar',
-# 				#'/home/xirioxinf/Documentos/descarte_xiriox/interfaz/./ejecutar_interfaz',
-# 				#'/home/xirioxinf/Documentos/descarte_xiriox/interfaz/./interfaz8',
-# 				#'/home/xirioxinf/Documentos/descarte_xiriox/encriptar/./ejecutar_encriptar',
-# 				'/home/xirioxinf/Documentos/descarte_xiriox/metadatos/./ejecutar_gps',
-# 				'/home/xirioxinf/Documentos/descarte_xiriox/arduino/./ejecutar_arduino',
-# 				##'/home/xirioxinf/Documentos/descarte_xiriox/./discosInternos',
+# script_array = [##'/home/xirioxinf/Documentos/descarte_xiriox/grabar/./ejecutar_grabar'.,
+# 				#'/home/xirioxinf/Documentos/descarte_xiriox/interfaz/./ejecutar_interfaz'.,
+# 				#'/home/xirioxinf/Documentos/descarte_xiriox/interfaz/./interfaz8'.,
+# 				#'/home/xirioxinf/Documentos/descarte_xiriox/encriptar/./ejecutar_encriptar'.,
+# 				'/home/xirioxinf/Documentos/descarte_xiriox/metadatos/./ejecutar_gps'.,
+# 				'/home/xirioxinf/Documentos/descarte_xiriox/arduino/./ejecutar_arduino'.,
+# 				##'/home/xirioxinf/Documentos/descarte_xiriox/./discosInternos'.,
 # 				#'/home/xirioxinf/Documentos/descarte_xiriox/encriptar/./reset_state',
-# 				'/home/xirioxinf/Documentos/descarte_xiriox/./ejecutarAlarmas',
-# 				##'/home/xirioxinf/Documentos/descarte_xiriox/./alarmaCamara',
-# 				##'/home/xirioxinf/Documentos/descarte_xiriox/./alarmaUPS',
+# 				'/home/xirioxinf/Documentos/descarte_xiriox/./ejecutarAlarmas'.,
+# 				##'/home/xirioxinf/Documentos/descarte_xiriox/./alarmaCamara'.,
+# 				##'/home/xirioxinf/Documentos/descarte_xiriox/./alarmaUPS'.,
 # 				#'/home/xirioxinf/Documentos/descarte_xiriox/./discos_daemon',
-#				'/home/xirioxinf/Documentos/descarte_xiriox/scripts/./recopDatos',
+#				'/home/xirioxinf/Documentos/descarte_xiriox/scripts/./recopDatos'.,
 # 				]
 
 def script_exe(pos):
