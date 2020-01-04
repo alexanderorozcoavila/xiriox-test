@@ -48,7 +48,7 @@ class Player(tk.Frame):
         self.api_servicio = "http://10.1.1.21:12345"
         self.rango_ip_camaras = '10.1.1.'
         self.direcFolder = '/home/xirioxinf/Documentos/descarte_xiriox/'
-        self.direc_principal = = '/home/xirioxinf/Documentos'
+        self.direc_principal = '/home/xirioxinf/Documentos'
         self.ruta_archivo = self.direcFolder + "config/config.cfg"
         self.ruta_archivo_version = self.direcFolder +"config/version.cfg"
         self.credenciales_camaras = "admin:xiriox3000"
