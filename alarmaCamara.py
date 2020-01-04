@@ -24,8 +24,7 @@ while True:
 		ventana.geometry("400x240")
 		imagen = PhotoImage(file="/home/xirioxinf/Documentos/descarte_xiriox/img/alarmaCamara.png")
 		fondo = Label(ventana,image=imagen).place(x=-1,y=-1)
-		#boton = Button(ventana, text="Apagar Equipo", command=funcion)
-		#boton.place(x = 135, y = 200)
+
 		ventana.wm_attributes('-type', 'splash')
 		ventana.mainloop()
 	else:
