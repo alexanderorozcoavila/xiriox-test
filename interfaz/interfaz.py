@@ -727,7 +727,7 @@ class Player(tk.Frame):
             
             # rs1 = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
             # rs = round(rs1, 2) + str(" MB")
-            rs = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
+            rs = int((int(r['discos_duros']['espacio_ocupado'])/1024)/1024)
             self.total_disco.set(rs)
             if texto_disco == "grabando":
                 self.grabacion.set(" Ok ")
