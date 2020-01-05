@@ -120,6 +120,7 @@ script_array = [
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/metadatos/ejecutar_gps.py',
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/arduino/ejecutar_arduino.py',
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/discosInternos.py',
+				'python3 /home/xirioxinf/Documentos/descarte_xiriox/discos_daemon.py',
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/ejecutarAlarmas.py',
 				'python3 /home/xirioxinf/Documentos/descarte_xiriox/alarmaCamara.py',
  				'python3 /home/xirioxinf/Documentos/descarte_xiriox/alarmaUPS.py',

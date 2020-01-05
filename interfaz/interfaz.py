@@ -697,6 +697,7 @@ class Player(tk.Frame):
         if response:
             r1 = recopDatos.index()
             r = json.loads(r1)
+            print(r)
             texto =r['gps']['fecha'] + '  ' + r['gps']['hora']
             self.date_time_text.set(texto)
             texto =r['id']['id_dri']
@@ -724,8 +725,9 @@ class Player(tk.Frame):
             self.porcentaje_disco_usado.set(self.por_disc_x)
             self.porcentaje_disco_disponible.set(100-self.por_disc_x)
             
-            rs1 = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
-            rs = round(rs1, 2) + str(" MB")
+            # rs1 = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
+            # rs = round(rs1, 2) + str(" MB")
+            rs = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
             self.total_disco.set(rs)
             if texto_disco == "grabando":
                 self.grabacion.set(" Ok ")
