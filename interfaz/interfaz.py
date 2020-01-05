@@ -246,7 +246,7 @@ class Player(tk.Frame):
         self.frame_sec_bottom_linea_4=tk.Frame(self.frame_sec_bottom_2, width=cam_w, height=20, background="#602066")
         self.frame_sec_bottom_linea_4.grid(sticky="W",row=4, column=0)
 
-        self.frame_sec_izq_title_3 = tk.Label(self.frame_sec_bottom_linea_4, text='Total disco:')
+        self.frame_sec_izq_title_3 = tk.Label(self.frame_sec_bottom_linea_4, text='Total disco (MB):')
         self.frame_sec_izq_title_3.grid(sticky="W",row=4, column=0)
         self.frame_sec_izq_title_3.config(fg="#3edeab",bg="#602066",font=("Verdana",15))
 
@@ -728,7 +728,7 @@ class Player(tk.Frame):
             # rs1 = (int(r['discos_duros']['espacio_ocupado'])/1024)/1024
             # rs = round(rs1, 2) + str(" MB")
             rs = int((int(r['discos_duros']['espacio_ocupado'])/1024)/1024)
-            self.total_disco.set(srt(rs)+" MB")
+            self.total_disco.set(rs)
             if texto_disco == "grabando":
                 self.grabacion.set(" Ok ")
                 self.frame_sec_izq_title_3.config(fg="white",bg="green",font=("Verdana",10))
